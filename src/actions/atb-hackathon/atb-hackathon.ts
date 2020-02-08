@@ -5,8 +5,9 @@ import * as url from "url"
 
 export class HackathonAction extends Hub.Action {
 
-  abstract domain: string
-
+  description = "Built for ATB Hackathon demo"
+  label = "Send Nudge (ATB Hackathon)"
+  name = "atb-hackathon"
   requiredFields = []
   params = []
   supportedActionTypes = [Hub.ActionType.Query]
