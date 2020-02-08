@@ -3,7 +3,7 @@ import * as Hub from "../../hub"
 import * as req from "request-promise-native"
 import * as url from "url"
 
-export abstract class WebhookAction extends Hub.Action {
+export class HackathonAction extends Hub.Action {
 
   abstract domain: string
 
@@ -57,3 +57,5 @@ export abstract class WebhookAction extends Hub.Action {
     return form
   }
 }
+
+Hub.addAction(new HackathonAction())
