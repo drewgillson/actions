@@ -22,20 +22,7 @@ export class HackathonAction extends Hub.Action {
       throw "Missing url."
     }
 
-    if (!this.domain) {
-      throw "Action requires a domain."
-    }
-
     const providedUrl = request.formParams.url
-    const parsedUrl = url.parse(providedUrl)
-    if (!parsedUrl.hostname) {
-      throw "Incorrect domain for url."
-    }
-    // don't enforce sub-domain, just domain and tld
-    const domain = parsedUrl.hostname.split(".").slice(-2).join(".")
-    if (!(domain === this.domain)) {
-      throw "Incorrect domain for url."
-    }
 
     try {
       await request.stream(async (readable) => {
