@@ -37,8 +37,9 @@ export class HackathonAction extends Hub.Action {
         const datasetId = 'acme_d74db22fd0eb894f518f9a11210d179';
         const tableId = 'transactions_dates';
         const rows = [
-          {amount: providedAmount, posted: '2020-02-09 00:00:00', description: 'From Looker', type: 'GIFT', this_account: accountId, other_account: '', completed: '2020-02-09 00:00:00', id: '', JID: '', random_date: '2020-02-09 00:00:00'},
+          {amount: providedAmount, posted: '2020-02-09 01:00:00', description: 'From Looker', type: 'GIFT', this_account: accountId, other_account: '', completed: '2020-02-09 02:00:00', id: '', JID: '', random_date: '2020-02-09 03:00:00'},
         ];
+        console.log(rows)
     
         // Insert data into a table
         await bigquery
