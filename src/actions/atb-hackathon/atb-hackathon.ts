@@ -2,18 +2,20 @@ import * as Hub from "../../hub"
 
 //import * as req from "request-promise-native"
 
+const TAG = "atb-hackathon"
+
 export class HackathonAction extends Hub.Action {
 
   description = "Built for ATB Hackathon demo"
   label = "Send Nudge (ATB Hackathon)"
   name = "atb-hackathon"
-  requiredFields = []
   params = []
-  supportedActionTypes = [Hub.ActionType.Query]
+  supportedActionTypes = [Hub.ActionType.Cell]
   usesStreaming = true
   supportedFormattings = [Hub.ActionFormatting.Unformatted]
   supportedVisualizationFormattings = [Hub.ActionVisualizationFormatting.Noapply]
   supportedFormats = [Hub.ActionFormat.JsonDetail]
+  requiredFields = [{ tag: TAG }]
 
   async execute(request: Hub.ActionRequest) {
 
