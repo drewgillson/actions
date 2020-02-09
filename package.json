@@ -90,7 +90,7 @@
   },
   "typings": "lib/index",
   "engines": {
-    "node": "10.8.0",
+    "node": "10.14.2",
     "yarn": ">=1.19.1"
   },
   "resolutions": {
