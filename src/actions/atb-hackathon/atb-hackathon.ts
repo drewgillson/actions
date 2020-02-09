@@ -11,7 +11,7 @@ export class HackathonAction extends Hub.Action {
   name = "atb-hackathon"
   params = []
   supportedActionTypes = [Hub.ActionType.Cell]
-  usesStreaming = true
+  usesStreaming = false
   supportedFormattings = [Hub.ActionFormatting.Unformatted]
   supportedVisualizationFormattings = [Hub.ActionVisualizationFormatting.Noapply]
   supportedFormats = [Hub.ActionFormat.JsonDetail]
