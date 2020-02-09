@@ -1,6 +1,6 @@
 import * as Hub from "../../hub"
 
-import * as req from "request-promise-native"
+//import * as req from "request-promise-native"
 
 export class HackathonAction extends Hub.Action {
 
